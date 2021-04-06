@@ -16,4 +16,8 @@ int main() {
 		/*cout << setprecision(2) << guess;*/
 		cout << setprecision(2) << setiosflags(ios::fixed) << guess << endl;
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 89e4c6bd20222949b426a70f95b28db7450d20e4
