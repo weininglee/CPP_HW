@@ -13,17 +13,17 @@ int main()
 		cin >> m >> n >> c;
 		unsigned absX = abs(x);
 
-		//§ä¥X¾ã¼Æ³¡¤À¦³´X¦ì¼Æ
+		//æ‰¾å‡ºæ•´æ•¸éƒ¨åˆ†æœ‰å¹¾ä½æ•¸
 		while (absX >= pow(10.0, count))
 		{
 			++count;
 		}
 
-		//¦pªG¬O­t¼Æ, ¦ì¼Æ¥[¤@
+		//å¦‚æœæ˜¯è² æ•¸, ä½æ•¸åŠ ä¸€
 		if (x < 0.0)
 			++count;
 
-		//¿é¥X¦³¤p¼Æ
+		//è¼¸å‡ºæœ‰å°æ•¸
 		if (n > 0)
 		{
 			fill = m - n - 1 - count;
@@ -38,7 +38,7 @@ int main()
 
 			cout << fixed << setprecision(n) << x << endl;
 		}
-		//¿é¥X¨S¦³¤p¼Æ
+		//è¼¸å‡ºæ²’æœ‰å°æ•¸
 		else
 		{
 			fill = m - count;

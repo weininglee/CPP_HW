@@ -22,11 +22,7 @@ Each line represents an INPUT, the program continues to request input, and ends 
 
 Each line is output according to the requirements of the problem.
 
-
-| Sample Input	 | Sample Output |
-| -------- | -------- |
-|  5<br>2147483647<br>12345678901234567890|           5<br>2147483647<br>12345678901234567890|
-
+![](https://i.imgur.com/NEmtkJK.png)
 
 - [x]  Eazy,Only basic programming syntax and structure are required.
 - [ ]  Medium,Multiple programming grammars and structures are required.

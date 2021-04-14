@@ -1,13 +1,19 @@
 #include<iostream>
-
+#include<cmath>
+#include<iomanip>
 using namespace std;
-
-int main() {
-	unsigned long long int x, y, z; // x = hour , y = min , z = sec
-	while (cin >> z) {
-		y = z / 60;
-		x = y / 60;
-		y = y % 60;
-		z = z % 60;
-		cout << x << " hours " << y << " minutes and " << z << " seconds" << endl;
+int main()
+{
+	double n, r, g;
+	cout << fixed << setprecision(2);
+	while (cin >> n)
+	{
+		g = n / 2.0;
+		do
+		{
+			r = g;
+			g = (g + n / g) / 2.0;
+		} while (abs(g - r) >= 0.01);
+		cout << g << "\n";
 	}
+}

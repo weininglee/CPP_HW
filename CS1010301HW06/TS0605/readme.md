@@ -1,10 +1,10 @@
 # Subject: Observation Diary
 ## Description:
 You are experimenting on several unknown creatures to observe their evolution.
-Design class ¡§Creature¡¨ to store the status of appendages (body parts) for
+Design class â€œCreatureâ€ to store the status of appendages (body parts) for
 each creature.
-Design class ¡§Diary¡¨ to store individual logs kept for each creature.
-You may modify everything except the provided ¡§main.cpp¡¨.
+Design class â€œDiaryâ€ to store individual logs kept for each creature.
+You may modify everything except the provided â€œmain.cppâ€.
 
 ## Input:
 The main function will be replaced for each test case.
@@ -23,7 +23,7 @@ creatureA.PrintLog(); // Print the log of creatureA
 1.	Format of PrintStatus(): Look at sample 1.
 Print the name and number of existing appendages (number > 0) sorted by name (string) in ascending order.
 2.	Format of PrintLog(): Look at sample 2.
-A diary (or log) starts from the target¡¦s creation and is not copied during cloning.
+A diary (or log) starts from the targetâ€™s creation and is not copied during cloning.
 Log day information when a creature is created and when NewDay() is called.
 Log the change and values when the number of any appendage changes.
 (appeared (0 -> X) / disappeared (X -> 0) / increased (X -> X + Y) / decreased ( X + Y -> X))
