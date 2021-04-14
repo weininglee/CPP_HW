@@ -11,8 +11,3 @@ int main() {
 		z = z % 60;
 		cout << x << " hours " << y << " minutes and " << z << " seconds" << endl;
 	}
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> 89e4c6bd20222949b426a70f95b28db7450d20e4
