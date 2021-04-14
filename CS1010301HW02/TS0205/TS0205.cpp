@@ -10,7 +10,7 @@ struct BitInt
 
 BitInt Add(BitInt a, BitInt b) {
 	BitInt sum;
-	//¤ÏÂà¹ï»ô­Ó¦ì¼Æ
+	//åè½‰å°é½Šå€‹ä½æ•¸
 	reverse(a.num.begin(), a.num.end());
 	reverse(b.num.begin(), b.num.end());
 	//sum.num = "a";
