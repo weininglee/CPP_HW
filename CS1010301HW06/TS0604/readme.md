@@ -76,16 +76,15 @@ int main()
 ```
 
 ### Sample Output 
-ASSIGNMENT!!!
-3 2
-ASSIGNMENT!!!
-1 2 3
-ASSIGNMENT!!!
-7 7 7
-28
-dimensions inconsistent
+ASSIGNMENT!!!<br>
+3 2<br>
+ASSIGNMENT!!!<br>
+1 2 3<br>
+ASSIGNMENT!!!<br>
+7 7 7<br>
+28<br>
+dimensions inconsistent<br>
 0
-
 
 - [x]  Eazy,Only basic programming syntax and structure are required.
 - [ ]  Medium,Multiple programming grammars and structures are required.
