@@ -26,91 +26,91 @@ public:
 input_main.cpp，input.txt
 
 ## Output:
-output.txt
-**要輸出atoi前+20的數字和直接atoi的數字**
-Length()是多少個數字
-StringToInteger()是印出轉換後的數字
+output.txt<br>
+**要輸出atoi前+20的數字和直接atoi的數字**<br>
+Length()是多少個數字<br>
+StringToInteger()是印出轉換後的數字<br>
 
 
 
 ## 第一組測資與輸出	
 ### Sample Input	
-input_main.cpp
-05
-11
-23
--10
--11
-8946	
+input_main.cpp<br>
+05<br>
+11<br>
+23<br>
+-10<br>
+-11<br>
+8946	<br>
 ### Sample Output
-4
-520
-4
-2
-5
-4
-4
-1120
-4
-2
-11
-4
-4
-2320
-4
-2
-23
-4
-4
--1020
-4
-2
--10
-4
-4
--1120
-4
-2
--11
-4
-6
-894620
-4
-4
-8946
+4<br>
+520<br>
+4<br>
+2<br>
+5<br>
+4<br>
+4<br>
+1120<br>
+4<br>
+2<br>
+11<br>
+4<br>
+4<br>
+2320<br>
+4<br>
+2<br>
+23<br>
+4<br>
+4<br>
+-1020<br>
+4<br>
+2<br>
+-10<br>
+4<br>
+4<br>
+-1120<br>
+4<br>
+2<br>
+-11<br>
+4<br>
+6<br>
+894620<br>
+4<br>
+4<br>
+8946<br>
 4
 
 ## 第二組	
 ### Sample Input
-input_main.cpp
-46506
--096504
-56400
-00494	
+input_main.cpp<br>
+46506<br>
+-096504<br>
+56400<br>
+00494	<br>
 ### Sample Output
-7
-4650620
-4
-5
-46506
-4
-8
--9650420
-4
-6
--96504
-4
-7
-5640020
-4
-5
-56400
-4
-7
-49420
-4
-5
-494
+7<br>
+4650620<br>
+4<br>
+5<br>
+46506<br>
+4<br>
+8<br>
+-9650420<br>
+4<br>
+6<br>
+-96504<br>
+4<br>
+7<br>
+5640020<br>
+4<br>
+5<br>
+56400<br>
+4<br>
+7<br>
+49420<br>
+4<br>
+5<br>
+494<br>
 4
 
 - [ ]  Eazy,Only basic programming syntax and structure are required.
