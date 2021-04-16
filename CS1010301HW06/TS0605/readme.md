@@ -9,7 +9,7 @@ You may modify everything except the provided “main.cpp”.
 ## Input:
 The main function will be replaced for each test case.
 There are several available instructions, while the first line must be NewDay():
-
+```
 Diary::NewDay("Date???"); // Change the day of diary
 Creature creatureA("CreatureA"); // A new creature named "CreatureA"
 Creature creatureB("CreatureB", creatureA); // A clone (body parts) of creatureA named "CreatureB"
@@ -18,7 +18,7 @@ creatureA["BodyPartA"] += integerY; // Add the number of "BodyPartA" of "Creatur
 creatureA["BodyPartA"] -= integerZ; // Subtract the number of "BodyPartA" of "CreatureA"
 creatureA.PrintStatus(); // Print the current status of creatureA
 creatureA.PrintLog(); // Print the log of creatureA
-
+```
 ## Output:
 1.	Format of PrintStatus(): Look at sample 1.
 Print the name and number of existing appendages (number > 0) sorted by name (string) in ascending order.
