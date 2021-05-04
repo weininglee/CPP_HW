@@ -3,9 +3,9 @@
 Please design a simple drawing program (fill the background with *), allow users to draw square, Isosceles right triangle and lines on the console (for figure, fill with Upper X)
 
 ## Input:
-At the beginning, allow users to enter the size of the drawing board(m*n).After that, enter the corresponding drawing code. S indicates square, T indicates Isosceles right triangle, L indicates lines. According to different figures, there follows various input information:
-S: input integer width(the width of the square). And coord x,y, drawing will start from x,y(calculates from the left-up corner of the square).
-T: input integer width(the side-length of the triangle). And coord x,y and the side the triangle faces. Which are respectively LU(Left Up),LD(Left Down),RU(Right Up),RD(Right Down).While drawing, the x,y indicates the position of right angle.
+At the beginning, allow users to enter the size of the drawing board(m*n).After that, enter the corresponding drawing code. S indicates square, T indicates Isosceles right triangle, L indicates lines. According to different figures, there follows various input information:<br>
+S: input integer width(the width of the square). And coord x,y, drawing will start from x,y(calculates from the left-up corner of the square).<br>
+T: input integer width(the side-length of the triangle). And coord x,y and the side the triangle faces. Which are respectively LU(Left Up),LD(Left Down),RU(Right Up),RD(Right Down).While drawing, the x,y indicates the position of right angle.<br>
 L: input two pairs of coord x1,y1 & x2,y2.Drawing from x1,y1 to x2,y2 (Except straight line, it would possible be tilted lines with +-45 Angle).
 Enter EXIT,end the program.
 

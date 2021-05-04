@@ -14,24 +14,7 @@ void Point::Move(int x, int y)
 void Point::Rotate()
 {
 	int temp = 0;
-	if (vertical >= 0 && horizontal >= 0) {
-		temp = vertical;
-		vertical = horizontal;
-		horizontal = (-1) * temp;
-	}
-	else if (vertical >= 0 && horizontal < 0) {
-		temp = vertical;
-		vertical = horizontal;
-		horizontal = (-1) * temp;
-	}
-	else if (vertical < 0 && horizontal < 0) {
-		temp = vertical;
-		vertical = horizontal;
-		horizontal = (-1) * temp;
-	}
-	else {
-		temp = vertical;
-		vertical = horizontal;
-		horizontal = (-1) * temp;
-	}
+	temp = vertical;
+	vertical = horizontal;
+	horizontal = (-1) * temp;
 }

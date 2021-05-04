@@ -102,15 +102,7 @@ bool operator==(Complex c1, Complex c2)
 
 ostream& operator<<(ostream& strm, const Complex& c) 
 {
-	strm << c.realValue;
-	if (c.imaginaryValue >= 0)
-	{
-		strm << " + " << c.imaginaryValue << "*i";
-	}
-	else if (c.imaginaryValue < 0)
-	{
-		strm << " + " << c.imaginaryValue << "*i";
-	}
+	strm << c.realValue << " + " << c.imaginaryValue << "*i";
 	return strm;
 }
 

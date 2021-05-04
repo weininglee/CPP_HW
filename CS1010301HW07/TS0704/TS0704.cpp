@@ -7,7 +7,7 @@ int lena, lenb;
 string a, b;
 int dp[1010][1010];
 
-void work() //ºtºâªk
+void work() 
 {
 	for (int i = 1; i <= lena; i++)
 	{
