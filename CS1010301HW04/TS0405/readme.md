@@ -5,7 +5,7 @@ Collatz conjecture, which also known as 3N+1 conjecture, is a conjecture in math
 (2) If N equals 1, end calculation<br>
 (3) ![](https://i.imgur.com/LzRpJ35.png)<br>
 (4) Goto Step 2<br>
-All the positive number that smaller than 1 million use this method to calculate will finally equal 1. You need to find out how many times you check if N equal 1 (include the number itself). The times of calculation is cycle length.
+All the positive number that smaller than 1 million use this method to calculate will finally equal 1. You need to find out how many times you check if N equal 1 (include the number itself). The times of calculation is cycle length.<br>
 For example, if 22 is inputted,
 the result will be: 22 11 34 17 52 26 13 40 20 10 5 16 8 4 2 1<br>
 the cycle length of 22 is 16.
