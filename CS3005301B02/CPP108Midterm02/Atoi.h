@@ -4,8 +4,8 @@ using namespace std;
 class Atoi {
 
 private:
-	string beConverted;
-	
+	string beTrans;
+	char sign;
 public:
 	Atoi();
 	Atoi(string s);

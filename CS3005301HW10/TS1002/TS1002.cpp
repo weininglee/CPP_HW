@@ -1,77 +1,48 @@
-/*#include<iostream>
-#include<fstream>
-#include<string>
-#include<vector>
+#include <iostream>
+#include <fstream>
+
 using namespace std;
 
-int main(){
-	char grid[4][4];
-    fstream file;
-    string in;
-    vector<string> wordsFound;
-    vector<string> words;
-    vector<vector<int> > locations;
-	for (int i = 0; i < 4; i++) {
-		for (int j = 0; j < 4; j++) {
-			grid[i][j] = '0';
-		}
-	}
-    file.open("words.txt");
-    while (getline(file, in)) {
-        words.push_back(in);
-    }
-    file.close();
-	while (!cin.eof()) {
-		for (int i = 0; i < 4; i++) {
-			for (int j = 0; i < 4; j++) {
-				cin >> grid[i][j];
+bool find_word(string word, int index, string s[], bool book[][4], int x = 0, int y = 0  ) {
+	if (!index) {
+		for (int y = 0; y < 4; y++) {
+			for (int x = 0; x < 4; x++) {
+				if (s[y][x] == word[0]) {
+					book[y][x] = true;
+					if (find_word(word, 1, s,book, x, y))return true;
+				}
 			}
 		}
-        for (int i = 0; i < 4; i++) {
-            for (int j = 0; j < 4; j++) {
-                //cout << grid[i][j] << " ";
-                //for each word
-                for (int k = 0; k < words.size(); k++) {
-                    //check if grid letter equals the first letter of word
-                    if (grid[i][j] == words[k][0]) {
-                        //check horizontal vertical and diagonal
-                        for (int l = 1; l <= words[k].size(); l++) {
-                            if (
-                                //break if no word was found
-                                grid[i - l][j] != words[k][l] &&
-                                grid[i + l][j] != words[k][l] &&
-                                grid[i][j + l] != words[k][l] &&
-                                grid[i][j - l] != words[k][l] &&
-                                grid[i + l][j + l] != words[k][l] &&
-                                grid[i - l][j - l] != words[k][l] &&
-                                grid[i + l][j - l] != words[k][l] &&
-                                grid[i - l][j + l] != words[k][l]) {
-                                break;
-                            }
-                            else if (l == words[k].size() - 1) {
-                                cout << words[k] << endl;
-                                vector<int> location;
-                                location.push_back(j + 1);
-                                location.push_back(i + 1);
-                                locations.push_back(location);
-                                //add word to wordsFound
-                                wordsFound.push_back(words[k]);
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        for (int i = 0; i < words.size(); i++) {
-            for (int j = 0; j < wordsFound.size(); j++) {
-                //loop to check if word in dictionary wasn't found and append to output.txt
-                if (words[i] == wordsFound[j]) {
-                    break;
-                }
-                else if (j == wordsFound.size() - 1) {
-                    cout << words[i] << " was not found!" << endl;
-                }
-            }
-        }
+		return false;
 	}
-}*/
+	if (index == word.size())return true;
+
+	for (int y1 = y - 1; y1 <= y + 1; y1++) {
+		for (int x1 = x - 1; x1 <= x + 1; x1++) {
+			if (y1 >= 0 && y1 < 4 && x1 >= 0 && x1 < 4) {
+				if (s[y1][x1] == word[index] && !book[y1][x1]) {
+					book[y1][x1] = true;
+					if (find_word(word, index+1, s,book, x1, y1))return true;
+				}
+			}
+		}
+	}
+	return false;
+}
+
+int main() {
+	string s[4];
+	while (cin>>s[0]>>s[1]>>s[2]>>s[3])
+	{
+		fstream f("words.txt");
+		string word;
+		while (f>>word)
+		{
+			bool book[][4] = { {false,false,false,false},{false,false,false,false},{false,false,false,false},{false,false,false,false} };
+			if (find_word(word,0, s,book)) {
+				cout << word << endl;
+			}
+		}
+		cout << endl;
+	}
+}

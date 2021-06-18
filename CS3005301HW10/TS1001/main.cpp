@@ -11,9 +11,9 @@ int main(void)
 	for (int i = 0; i < ELEMENTS_FOR_COMBINATION; ++i)
 		arrayPtr[i] = i + 1;
 
-	
-	PrintCombination(arrayPtr, ELEMENTS_FOR_COMBINATION, DLEMENTS_FOR_CHOICE);
-
+	//for (int i = 1; i <= ELEMENTS_FOR_COMBINATION; i++) {
+		PrintCombination(arrayPtr, ELEMENTS_FOR_COMBINATION, DLEMENTS_FOR_CHOICE);
+	//}
 	if (arrayPtr != NULL)
 		delete[] arrayPtr;
 

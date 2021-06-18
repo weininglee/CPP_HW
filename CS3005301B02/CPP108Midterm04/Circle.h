@@ -10,9 +10,15 @@ class Circle
 private:
 	double r;
 public:
-	Circle();
-	void inputCircle();
-	double getArea();
+	Circle() : r(0) {}
+
+	void inputCircle() {
+		cin >> r;
+	}
+
+	double getArea() {
+		return r * r * PI;
+	}
 };
 
 #endif // Circle_H 

@@ -10,9 +10,16 @@ private:
 	Circle circle;
 
 public:
-	Cylinder();
-	void inputCylinder();
-	double getVolume();
+	Cylinder() : width(0), circle() {}
+
+	void inputCylinder() {
+		circle.inputCircle();
+		cin >> width;
+	}
+
+	double getVolume() {
+		return circle.getArea() * width;
+	}
 };
 
 #endif // Cylinder_H 

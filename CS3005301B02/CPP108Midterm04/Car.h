@@ -12,9 +12,16 @@ private:
 	Wheel wheel;
 
 public:
-	Car();
-	void inputCar();
-	double getVolume();
+	Car() : length(0), width(0), height(0), wheelN(0), wheel() {}
+
+	void inputCar() {
+		cin >> length >> width >> height >> wheelN;
+		wheel.inputWheel();
+	}
+
+	double getVolume() {
+		return wheel.getVolume() * wheelN + length * width * height;
+	}
 };
 
 #endif // Car_H 
